@@ -4,7 +4,7 @@
 **(*= equal contribution)**
 
 <p align="center">
-  <img src='https://github.com/mazurowski-lab/rad/blob/main/figs/teaser.png' width='95%'>
+  <img src='https://github.com/mazurowski-lab/rad/blob/main/figs/teaser.png' width='75%'>
 </p>
 
 Metrics like FID are commonly used in medical image analysis to compare distributions of real and/or generated images following accepted practices in mainstream computer vision, but they may not be the best choice for medical imaging! Here we provide easy-to-use code for computing our proposed distance metric **RaD** (**Ra**diomic **D**istance) between sets of medical images, which we introduced in our paper *RaD: A Metric for Medical Image Distribution Comparison in Out-of-Domain Detection and Other Applications* [${\color{red}\text{(link to add soon)}}$], specifically designed for the needs of medical image analysis.
@@ -108,7 +108,7 @@ python3 ood_detection.py \
 You can also perform additional radiomic feature interpretability analysis to understand what specific radiomic features are driving the differences between two sets of images (for example, are these differences mostly texture-based?), and if the datasets are paired, which images are most and least changed between the two distributions according to these features. For example, this can be used to interpret how an image-to-image translation model transformed images from one domain to another (as shown in the paper):
 
 <p align="center">
-  <img src='https://github.com/mazurowski-lab/rad/blob/main/figs/radiomic_interp.png' width='95%'>
+  <img src='https://github.com/mazurowski-lab/rad/blob/main/figs/radiomic_interp.png' width='65%'>
 </p>
 
 Which can be created easily by adding the `--interpret` argument to `compute_rad.py`, as
