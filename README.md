@@ -3,11 +3,13 @@
 #### By [Nicholas Konz](https://nickk124.github.io/), [Yuwen Chen*](https://scholar.google.com/citations?user=61s49p0AAAAJ&hl=en), [Hanxue Gu*](https://scholar.google.com/citations?user=aGjCpQUAAAAJ&hl=en), [Haoyu Dong](https://haoyudong-97.github.io/), [Yaqian Chen](https://scholar.google.com/citations?user=iegKFuQAAAAJ&hl=en) and [Maciej Mazurowski](https://sites.duke.edu/mazurowski/).
 **(*= equal contribution)**
 
+arXiv paper link: [![arXiv Paper](https://img.shields.io/badge/arXiv-2412.01496-orange.svg?style=flat)](https://arxiv.org/abs/2412.01496)
+
 <p align="center">
   <img src='https://github.com/mazurowski-lab/rad/blob/main/figs/teaser.png' width='75%'>
 </p>
 
-Metrics like FID are commonly used in medical image analysis to compare distributions of real and/or generated images following accepted practices in mainstream computer vision, but they may not be the best choice for medical imaging! Here we provide easy-to-use code for computing our proposed distance metric **RaD** (**Ra**diomic **D**istance) between sets of medical images, which we introduced in our paper *RaD: A Metric for Medical Image Distribution Comparison in Out-of-Domain Detection and Other Applications* [${\color{red}\text{(link to add soon)}}$], specifically designed for the needs of medical image analysis.
+Metrics like FID are commonly used in medical image analysis to compare distributions of real and/or generated images following accepted practices in mainstream computer vision, but they may not be the best choice for medical imaging! Here we provide easy-to-use code for computing our proposed distance metric **RaD** (**Ra**diomic **D**istance) between sets of medical images, which we introduced in our paper *RaD: A Metric for Medical Image Distribution Comparison in Out-of-Domain Detection and Other Applications* ([link](https://arxiv.org/abs/2412.01496)), specifically designed for the needs of medical image analysis.
 
 ### Why use RaD over FID, KID, CMMD, etc.?
 
@@ -35,7 +37,18 @@ Big thanks to [PyRadiomics](https://github.com/AIM-Harvard/pyradiomics) for prov
 
 ## Citation
 
-Please cite our paper if you use our code or reference our work: ${\color{red}\text{TO ADD!}}$
+Please cite our paper if you use our code or reference our work:
+```bib
+@article{konz2024radmetricmedicalimage,
+      title={RaD: A Metric for Medical Image Distribution Comparison in Out-of-Domain Detection and Other Applications}, 
+      author={Nicholas Konz and Yuwen Chen and Hanxue Gu and Haoyu Dong and Yaqian Chen and Maciej A. Mazurowski},
+      year={2024},
+      eprint={2412.01496},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2412.01496}, 
+}
+```
 
 ## 1) Installation
 
