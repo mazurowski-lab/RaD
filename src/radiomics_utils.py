@@ -258,10 +258,14 @@ def compute_and_save_imagefolder_radiomics_parallel(
     
     radiomics = []
     img_filenames = []
+    num_skipped = 0
     for r in result_list:
-        radiomics_sub, filenames_sub = r.get(timeout=10000)
-        radiomics += radiomics_sub
-        img_filenames += filenames_sub
+        try:
+            radiomics_sub, filenames_sub = r.get(timeout=100000)
+            radiomics += radiomics_sub
+            img_filenames += filenames_sub
+        except ValueError:
+            num_skipped += 1
     
     # bring all data together and save
     radiomics_df = pd.DataFrame(radiomics)
@@ -270,6 +274,8 @@ def compute_and_save_imagefolder_radiomics_parallel(
     radiomics_df.to_csv(radiomics_csv_fname, index=False)
 
     print("saved radiomics to {}".format(radiomics_csv_fname))
+    if num_skipped != 0:
+        print("had to skip {} images due to errors.".format(num_skipped))
 
     return radiomics_df
 
