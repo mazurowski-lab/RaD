@@ -52,7 +52,7 @@ Please cite our paper if you use our code or reference our work:
 
 ## 1) Installation
 
-Please run `pip3 install -r requirements.txt` to install the required packages.
+First, note that Python <=3.9 is required due to PyRadiomics (see [here](https://github.com/AIM-Harvard/pyradiomics/issues/903)). Next, please run `pip3 install -r requirements.txt` to install the required packages.
 
 Next, install PyRadiomics by running `bash install.sh`.
 
