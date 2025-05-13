@@ -52,9 +52,9 @@ Please cite our paper if you use our code or reference our work:
 
 ## 1) Installation
 
-First, note that Python <=3.9 is required due to PyRadiomics (see [here](https://github.com/AIM-Harvard/pyradiomics/issues/903)). Next, please run `pip3 install -r requirements.txt` to install the required packages.
-
-Next, install PyRadiomics by running `bash install.sh`.
+1. First, note that Python <=3.9 is required due to PyRadiomics (see [here](https://github.com/AIM-Harvard/pyradiomics/issues/903)); for example, if using conda, run `conda install python=3.9`.
+2. Next, please run `pip3 install -r requirements.txt` to install the required packages.
+3. Finally, install PyRadiomics by running `bash install.sh`.
 
 ## 2) Basic Usage: Compute RaD
 
